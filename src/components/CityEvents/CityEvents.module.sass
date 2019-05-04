@@ -1,0 +1,169 @@
+.cityEvents
+  width: 100%
+  min-height: 100vh
+  background: rgba(10, 67, 90, .1)
+  text-align: center
+  padding: 165px 0 0 0
+
+.inner
+  margin: 0 auto 55px auto
+  min-height: calc(100vh - 330px)
+  max-width: 1270px
+  position: relative
+  h2
+    background: url('/img/SanFrancisco.png') no-repeat
+    background-size: 100% 100%
+    text-transform: uppercase
+    margin: 0
+    padding: 100px 0
+    font-size: 40px
+    font-weight: 800
+    color: #fff
+
+.events
+  background: #fff
+  padding: 35px 45px
+  color: #0A435A
+  text-align: left
+  h3
+    font-size: 18px
+    font-weight: 400
+    margin: 0 0 35px 0
+
+.eventList
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 25px
+  .eventCard
+    border: 1px solid #979797
+    max-width: 270px
+    background-repeat: no-repeat
+    padding-top: 100px
+    cursor: pointer
+
+.info
+  background: #fff
+  padding: 40px 25px
+  position: relative
+  h4
+    margin: 0 0 10px 0
+    font-size: 20px
+    font-weight: 400
+  h5
+    width: 100%
+    white-space: nowrap
+    overflow: hidden
+    font-size: 13px
+    font-weight: 300
+    margin: 0 0 10px 0
+    text-overflow: ellipsis
+.author
+  font-size: 13px
+  font-weight: 600
+  text-align: right
+.description
+  margin-bottom: 25px
+  font-size: 13px
+  font-weight: 300
+  max-height: 112px
+  overflow: hidden
+
+.attending
+  font-size: 12px
+  font-weight: 400
+  position: absolute
+  top: -7px
+  right: 25px
+  span
+    display: inline-block
+    width: 36px
+    height: 36px
+    margin-left: 7px
+    text-align: center
+    line-height: 36px
+    border-radius: 50%
+    color: #fff
+    font-weight: 600
+    background: #FB5A73
+
+
+.controls
+  margin: 0 auto 60px auto
+  display: flex
+  color: #c2c2c2
+  justify-content: center
+  & > div
+    width: 35px
+    height: 35px
+    border: 1px solid #c2c2c2
+    border-right: none
+    text-align: center
+    line-height: 33px
+    cursor: pointer
+  .next, .prev
+    background: #F2F2F2
+    border-top-left-radius: 5px
+    border-bottom-left-radius: 5px
+    display: flex
+    justify-content: center
+    align-items: center
+  .next
+    border-right: 1px solid #c2c2c2
+    transform: rotate(180deg)
+
+  .selected
+    background: #fafafa
+
+
+.eventMain
+  position: relative
+  background: #fff
+  padding: 35px 45px
+  color: #0A435A
+  text-align: center
+  font-weight: 300
+  line-height: 24px
+  h3
+    font-size: 30px
+    margin: 0 0 15px 0
+    font-weight: 600
+  span
+    display: block
+  .eventDate
+    font-size: 28px
+    margin-bottom: 60px
+  .eventLocation
+    color: #247BA0
+    font-size: 20px
+    margin-bottom: 45px
+  h5
+    font-size: 16px
+    font-weight: 300
+  p
+    margin: 0 auto
+    max-width: 950px
+    span
+      font-weight: 600
+  button
+    background: #358ED7
+    color: #fff
+    border: none
+    border-radius: 3px
+    padding: 15px 37px
+    cursor: pointer
+
+
+.back
+  position: absolute
+  left: 0
+  top: -320px
+  color: #BBBDBF
+  font-weight: 400
+  font-size: 13px
+  cursor: pointer
+  span
+    font-family: sans-serif
+    position: absolute
+    right: 13px
+    top: 5px

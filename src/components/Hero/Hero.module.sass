@@ -1,0 +1,82 @@
+.hero
+  position: relative
+  width: 100%
+  height: 100vh
+  overflow: hidden
+  display: flex
+  justify-content: center
+  align-items: center
+  .content
+    position: relative
+    box-sizing: border-box
+    width: auto
+
+.background
+  position: absolute
+  background: url('/img/Logo.svg') center no-repeat
+  z-index: -1
+  opacity: .3
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  transform: scale(7) translate(-1.5%, 1%)
+
+.searchBarWrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  span
+    padding: 20px 0
+    color: #0F4A62
+    font-size: 24px
+
+.searchBar
+  position: relative
+  width: 80%
+  height: 65px
+  background: #ffffff
+  border: 3px solid #1F7CA1
+  font-size: 16px
+  line-height: 59px
+  box-sizing: border-box
+  padding: 0 20px
+  color: #247BA0
+  img
+    position: absolute
+    right: 10px
+    left: auto
+    top: 50%
+    transform: translateY(-50%)
+    height: 90%
+
+@media screen and (max-width: 1024.99px)
+  .searchBarWrapper
+    span
+      font-size: 20px
+  .searchBar
+    font-size: 12px
+
+@media screen and (max-width: 775px)
+  .hero
+    padding: 0 25px
+    height: auto
+    min-height: 100vh
+    align-items: flex-start
+    justify-content: center
+    .content
+      margin-top: 100px
+      img
+        width: 100%
+  .searchBarWrapper
+    span
+      font-size: 25px
+      margin: 40px 0
+      text-align: center
+  .searchBar
+    display: none
+
+@media screen and (max-width: 600px)
+  .searchBarWrapper
+    span
+      font-size: 22px
